@@ -2,6 +2,14 @@ import * as PIXI from "pixi.js";
 import {Viewport} from "pixi-viewport";
 import type * as RAPIER from "@dimforge/rapier2d";
 
+declare global {
+    interface Window {
+       PIXI: any; 
+    }
+}
+
+window.PIXI = PIXI;
+
 type RAPIER_API = typeof import("@dimforge/rapier2d");
 
 const BOX_INSTANCE_INDEX = 0;

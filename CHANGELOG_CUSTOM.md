@@ -1,0 +1,1 @@
+Check changes to testbed2d/src/Graphics.ts for how we exposed PIXI to window for sampling
